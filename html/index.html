@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Rewards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="app" class="hidden">
+        <section class="panel" aria-label="Daily rewards">
+            <header class="topbar">
+                <div class="brand"><span class="brand-mark">★</span><div><span class="eyebrow">LOYALTY PROGRAM</span><h1 id="title">Daily Rewards</h1></div></div>
+                <button id="close" class="close" aria-label="Close">×</button>
+            </header>
+            <div class="intro"><div><p id="subtitle">Log in every day and claim your rewards.</p><p class="progress-label"><strong id="progress-text">Day 1 of 30</strong><span id="claimed-text">0 claimed</span></p></div><div class="progress"><i id="progress-bar"></i></div></div>
+            <div id="days" class="days"></div>
+            <footer><span class="hint"><b>ESC</b> to close</span><span class="status-dot"></span><span>Rewards reset daily</span></footer>
+        </section>
+    </main>
+    <div id="toast" class="toast"></div>
+    <script src="app.js"></script>
+</body>
+</html>
